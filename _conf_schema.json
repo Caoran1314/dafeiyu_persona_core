@@ -1,0 +1,31 @@
+{
+  "enable": {
+    "description": "启用人格内核钳位",
+    "type": "bool",
+    "default": true
+  },
+  "max_dp": {
+    "description": "单轮单维最大变化",
+    "type": "float",
+    "default": 0.12,
+    "hint": "一轮对话里，任一维度最多变这么多；调小更稳、调大更易被对话带动"
+  },
+  "core_floor": {
+    "description": "内核强度保底",
+    "type": "float",
+    "default": 0.15,
+    "hint": "低于这个值就拒绝本次人格修改"
+  },
+  "inject": {
+    "description": "是否自己注入性格描述",
+    "type": "bool",
+    "default": true,
+    "hint": "交给心智内核统一装配时关掉这个，避免重复注入"
+  },
+  "delta_mode": {
+    "description": "人格变化来源",
+    "type": "string",
+    "default": "heuristic",
+    "hint": "heuristic=按事件类型推断；model=让她自己提（多一次模型调用）"
+  }
+}

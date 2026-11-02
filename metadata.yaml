@@ -1,0 +1,13 @@
+name: dafeiyu_persona_core
+display_name: 大肥鱼人格内核
+short_desc: 人格向量单轮钳位，聊再久人设也不会被改写
+desc: 人格向量的单轮钳位（±0.12）+ 内核强度保底（≥0.15）+ 核心区签名只读，防止聊几句人设被改写
+help: 装上即生效，不读不写记忆库。命令：/人格看 看向量，/人格模拟 negative 0.8 试钳位，/人格重置 回内核
+version: 1.1.0
+author: Caoran1314
+category: AI 增强
+astrbot_version: ">=4.24.0"
+support_platforms:
+  - aiocqhttp
+  - webchat
+repo: https://github.com/Caoran1314/dafeiyu_persona_core
